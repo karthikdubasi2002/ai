@@ -19,7 +19,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7000231271:AAGTkZ35Z0JgbNvbH2VqM8Qglicowwk
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1058015838').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/mr_krazy")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001652564383'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/theheroflix')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001638006524').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://lusi:lusi@lusi.i3wyh.mongodb.net/?retryWrites=true&w=majority&appName=lusi")
